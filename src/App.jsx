@@ -10,14 +10,9 @@ function App() {
   const [currentPage, setCurrentPage] = useState('all items')
   const [sortBy, setSortBy] = useState('none');
 
-  const handleSetSortBy = (option) => {
-    setSortBy(option)
-  }
-
-  const handleSetCurrentPage = (page) => {
-    setCurrentPage(page);
-  }
-
+  const handleSetSortBy = (option) => setSortBy(option);
+  const handleSetCurrentPage = (page) => setCurrentPage(page);
+  
   return (
     <>
       <Header onCurrentPage={handleSetCurrentPage} currentPage={currentPage} />
