@@ -601,6 +601,15 @@ const itemsCategory = [...new Set(allItems.map(item => item.item_type))]
 
 export const getItemsByCategory = category => allItems.filter(item => item.item_type === category);
 
+export const getSortedByFilter = (items, sortBy) => {
+    let sortedItems;
+    if (sortBy === 'none') sortedItems = items;
+    if (sortBy === 'name') sortedItems = items.toSorted((a, b) => a.name.localeCompare(b.name));
+    if (sortBy === 'rare') sortedItems = items.toSorted((a, b) => a.rare.localeCompare(b.rare));
+
+    return sortedItems;
+}
+
 
 //ChatGPT didnt like to add custom strings, adding some random images on items
 getItemsByCategory('armors').forEach(armor => armor.image = 'armor_' + (Math.floor(Math.random() * 7)));

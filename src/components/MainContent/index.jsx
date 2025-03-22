@@ -1,13 +1,11 @@
 import ItemWithPicture from '../ItemWithPicture';
 import styles from './mainContent.module.css';
 import OptionsSorter from '../OptionsSorter';
+import { getSortedByFilter } from '../../data/data';
 
 const MainContent = ({ items, currentPage, onSortBy, sortBy }) => {
 
-    let sortedItems;
-    if (sortBy === 'none') sortedItems = items;
-    if (sortBy === 'name') sortedItems = items.toSorted((a, b) => a.name.localeCompare(b.name));
-    if (sortBy === 'rare') sortedItems = items.toSorted((a, b) => a.rare.localeCompare(b.rare));
+    let sortedItems = getSortedByFilter(items, sortBy)
 
     return (
         <>

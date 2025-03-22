@@ -6,7 +6,7 @@ const Navigation = ({onCurrentPage, currentPage}) => {
 
     return (
         <nav className={styles.container}>
-            <NavigationItem category={'home'} onCurrentPage={onCurrentPage} currentPage={currentPage} />
+            <NavigationItem category={'all items'} onCurrentPage={onCurrentPage} currentPage={currentPage} />
           {itemsCategory.map((category, index) => <NavigationItem  key={index} category={category} onCurrentPage={onCurrentPage} currentPage={currentPage} />)}
         </nav>
     )

@@ -7,7 +7,7 @@ import { allItems, getItemsByCategory } from './data/data'
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState(null)
+  const [currentPage, setCurrentPage] = useState('all items')
   const [sortBy, setSortBy] = useState('none');
 
   const handleSetSortBy = (option) => {
@@ -21,8 +21,11 @@ function App() {
   return (
     <>
       <Header onCurrentPage={handleSetCurrentPage} currentPage={currentPage} />
-      {!currentPage && <MainContent items={allItems} currentPage={currentPage} sortBy={sortBy} onSortBy={handleSetSortBy}/>}
-      {currentPage && <MainContent items={getItemsByCategory(currentPage)} currentPage={currentPage} sortBy={sortBy} onSortBy={handleSetSortBy} />}
+      {
+        currentPage === 'all items'
+          ? <MainContent items={allItems} currentPage={currentPage} sortBy={sortBy} onSortBy={handleSetSortBy} />
+          : currentPage && <MainContent items={getItemsByCategory(currentPage)} currentPage={currentPage} sortBy={sortBy} onSortBy={handleSetSortBy} />
+      }
       <Footer />
     </>
   )
