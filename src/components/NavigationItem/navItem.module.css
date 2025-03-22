@@ -1,0 +1,19 @@
+.navItem {
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 1px solid #fff;
+    margin-right: 1rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #222;
+        text-decoration: underline;
+    }
+}
+
+.active {
+    background-color: #222;
+        text-decoration: underline;
+}

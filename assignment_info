@@ -1,0 +1,84 @@
+For this assignment you are required to build a Single Page Application in React. This assignment examines your understanding of the core React concepts: functional components, props and state.  
+
+
+
+As always the choice of content and design is up to you, but it must consist of 3 "pages". No routing should be used in this assignment, we will use state to mock routing.
+
+
+
+To achieve a Godkänt grade:
+
+
+
+Create a React Single Page Application with:
+
+
+
+A home page
+
+Navigation to 2 other "pages"
+
+
+State is used to conditionally render the content of the current "page"
+
+The pages can have the same layout & structure, or they can be entirely different - the choice is yours.
+The content must be different for each page
+Each page should have common elements such as a header, page title, navigation, footer etc
+
+
+Use of components for all elements
+
+
+
+Use of props to pass data to elements when necessary
+
+For example the page title should be different for each page - eg different text inside an h1
+
+
+Each page should have at least one image
+
+
+
+Responsive styling
+
+
+
+It is completely acceptable to use objects for all your content, though it is not required. You can "hard code" content for each page.
+
+
+
+To achieve a Välgodkänt grade:
+
+
+
+The use of the map method to render components
+
+
+
+Project organization:
+
+Correct directory structure
+Correct naming conventions
+
+
+The use of CSS modules
+
+
+
+Correct syntax and naming conventions
+
+
+
+Consistent and correct coding style.
+
+
+
+Submission:
+
+
+
+A link to the github repo
+
+
+
+A link to the live site on Vercel or Render

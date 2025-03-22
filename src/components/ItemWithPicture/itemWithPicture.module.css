@@ -1,0 +1,42 @@
+.container {
+    max-width: 400px;
+    padding: 1rem;
+    height: auto;
+    display: inline-flex;
+    box-shadow: 0 0 15px 10px #0000002a;
+    margin: 1rem;
+    border: 1px solid #222;
+    flex-direction: column;
+}
+
+.image {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #000;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.itemTitle {
+    font-size: 24px;
+    text-decoration: underline;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.itemDescription {
+    color: #fdfdfd;
+}
+
+.infoWrapper {
+    display: flex;
+}
+
+.rare {
+    text-transform: capitalize;
+}
+

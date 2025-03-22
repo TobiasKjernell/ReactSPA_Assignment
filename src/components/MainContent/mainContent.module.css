@@ -1,0 +1,15 @@
+.container {
+    color: #1714b9;
+    flex: 1;
+    margin: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pageTitle {
+    color: #fff;
+    margin-top: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+}
