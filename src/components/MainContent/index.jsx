@@ -5,8 +5,6 @@ import { getSortedByFilter } from '../../data/data';
 
 const MainContent = ({ items, currentPage, onSortBy, sortBy }) => {
 
-    let sortedItems = getSortedByFilter(items, sortBy)
-
     return (
         <>
             <h2 className={styles.pageTitle}>{currentPage ? currentPage : 'All items'}</h2>
@@ -14,7 +12,7 @@ const MainContent = ({ items, currentPage, onSortBy, sortBy }) => {
 
             <div className={styles.container}>
                 <div className={styles.itemContainer}>
-                    {sortedItems.map((item, index) => <ItemWithPicture {...item} key={index} />)}
+                    {getSortedByFilter(items, sortBy).map((item, index) => <ItemWithPicture {...item} key={index} />)}
                 </div>
             </div>
         </>
