@@ -13,6 +13,14 @@
     text-transform: capitalize;
 }
 
+.itemContainer {
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         margin: 1rem;

@@ -13,7 +13,9 @@ const MainContent = ({ items, currentPage, onSortBy, sortBy }) => {
             <OptionsSorter sortBy={sortBy} onSortBy={onSortBy} showPrefixText={true} />
 
             <div className={styles.container}>
-                {sortedItems.map((item, index) => <ItemWithPicture {...item} key={index} />)}
+                <div className={styles.itemContainer}>
+                    {sortedItems.map((item, index) => <ItemWithPicture {...item} key={index} />)}
+                </div>
             </div>
         </>
     )
