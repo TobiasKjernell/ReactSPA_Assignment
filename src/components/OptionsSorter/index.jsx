@@ -11,9 +11,7 @@ const OptionsSorter = ({ sortBy, onSortBy, showPrefixText = false }) => {
                     <option value='rare'>Sort by Rarity</option>
                 </select>
             </div>
-
         </div>
-
     )
 }
 

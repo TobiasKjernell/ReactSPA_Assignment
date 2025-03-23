@@ -3,7 +3,6 @@ export const getImageUrl = name => {
 }
 
 export const getRareColor = (rare) => {
-  console.log(rare)
   switch (rare) {
       case 'set':
           return 'green'

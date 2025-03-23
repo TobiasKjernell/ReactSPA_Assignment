@@ -2,8 +2,6 @@ import { getImageUrl, getRareColor } from '../../utils/functions';
 import styles from './itemWithPicture.module.css'
 
 const ItemWithPicture = ({ name = "Name", description = "description placeholder", rare = 'uncommon', image = "" }) => {
-
-   
     return (
         <div className={styles.container}>
             <p className={styles.rare} style={{ color: `${getRareColor(rare)}`}} >{rare}</p>
