@@ -610,7 +610,6 @@ export const getSortedByFilter = (items, sortBy) => {
     return sortedItems;
 }
 
-
 //ChatGPT didnt like to add custom strings, adding some random images on items
 getItemsByCategory('armors').forEach(armor => armor.image = 'armor_' + (Math.floor(Math.random() * 7)));
 getItemsByCategory('shields').forEach(armor => armor.image = 'shield_' + (Math.floor(Math.random() * 6)));
