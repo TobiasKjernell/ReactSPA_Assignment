@@ -1,0 +1,19 @@
+ChatGPT can be nice to generate random data for some content info, use it when you need a json to mock around with.
+
+classname={`${classname}`}, style={{prop: stat}}, styles['classname] they all seems legit to get some dynamic going. 
+
+mapping out where to put states is easier when i've put out some html/comp structure. 
+
+make components resuable as much as possible to keep components-count low => easier to keep track on what to use. 
+
+use states as checkers/conditionals
+
+have to use grids more so i learn it better, flex is powerful when you're used to it but feels like grids can solve alot aswell.
+
+new Map() class is powerful but keeping it inside personal projects so i keep up with normal data management aswell within assignments.
+
+timeboxed this assignment to 1day and succeed, starting to get a grip to timebox different tasks.
+
+keep update with vanilla js for some hidden gems such as 'localeCompare'.
+
+did this website inspired from some game-type database if we going to build website for FTG game classes. 
